@@ -1,0 +1,29 @@
+@media (max-width: 450px){
+    .main{
+        width: 100%;
+    }
+    ul.products{
+        display: block;
+    }
+    ul.products li {
+        width: 414px;
+    }
+    .main h1 {
+        display: block;
+        margin: 5px 10%;
+        text-align: left;
+    }
+    .pics4, .pics41, .pics42{
+        display: block;
+    }
+    .pic1, .pic2, .pic3, .pic4, .pic5, .pic6, .pic7, .pic8{
+        max-width: 420px;
+    }
+    .pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img, .pic7 img, .pic8 img{
+        width: 100%;
+    }
+    .pic1:hover img, .pic2:hover img, .pic3:hover img, .pic4:hover img, .pic5:hover img, .pic6:hover img, .pic7:hover img, .pic8:hover img{
+        opacity: 0.5;
+    }
+    
+}
