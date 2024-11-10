@@ -27,3 +27,26 @@
     }
     
 }
+@media (min-width: 451px) and (max-width:1023px) {
+    
+    .main-picture__container, .main-img{
+         width: 103%;
+    } 
+
+
+    .main-product-one, .main-product-two, .main-product-three, .main-product-four, .main-product-five, .main-product-six {
+        display: block;
+        margin-top: 15px;
+    }
+    .main-content--from{
+        margin-right: 5px;
+    }
+    .header-content--time {
+       
+        display: none;
+    }
+    .menu-bar, .header-nav__div--trangchu, .header-nav__div--camera, .header-nav__div--camera-accessory, .header-nav__div--laptop, .header-nav__div--laptop-accessory {
+        padding: 5px 5px;
+    }
+   
+}

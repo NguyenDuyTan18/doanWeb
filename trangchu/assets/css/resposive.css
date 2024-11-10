@@ -10,14 +10,26 @@
     }
 
     .header-content_img--logo{
-        width: 70px;
+        width: 120px;
         margin-right: 60px;
     }
 
     .header .header-content{
         margin-bottom: 20px;
         margin-top: 20px;
-        justify-content:start;
+       
+    }
+
+    .header-content__container{
+        display: block;
+    }
+
+    .header-content__container a{
+        margin-left: 70px;
+        margin-right: 10px;
+    }
+    .header-content__container--search{
+        margin-bottom: 20px;
     }
 
     .header .header-content, .header-content__container,
@@ -166,7 +178,7 @@
     /* modal */
 }
 
-@media (min-width: 769px) and (max-width:1023px) {
+@media (min-width: 769px) and (max-width:1024px) {
     
     .main-picture__container, .main-img{
          width: 103%;

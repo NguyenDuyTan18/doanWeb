@@ -1,21 +1,21 @@
-// set time
-    const headerTime = document.querySelector('.header-content--time')
-    setInterval(()=>{
-        let objTime = new Date();
-        let timehour= objTime.getHours();
-        let timeminute = objTime.getMinutes();
-        let timesecond = objTime.getSeconds();
-        let check;
-        if(timehour < 10) timehour = `0${timehour}`
-        if(timeminute < 10) timeminute = `0${timeminute}`
-        if(timesecond < 10) timesecond = `0${timesecond}`
-        if(timehour > 12) check = `PM <i class="fa-solid fa-moon"></i>`
-        else check = `AM <i class="fa-solid fa-sun"></i>`
-        let time = `<div>${timehour}:${timeminute}:${timesecond} ${check}</div>`
-        console.log(time)
-        headerTime.innerHTML = time;
-    }, 1000)
-// set time
+// // set time
+//     const headerTime = document.querySelector('.header-content--time')
+//     setInterval(()=>{
+//         let objTime = new Date();
+//         let timehour= objTime.getHours();
+//         let timeminute = objTime.getMinutes();
+//         let timesecond = objTime.getSeconds();
+//         let check;
+//         if(timehour < 10) timehour = `0${timehour}`
+//         if(timeminute < 10) timeminute = `0${timeminute}`
+//         if(timesecond < 10) timesecond = `0${timesecond}`
+//         if(timehour > 12) check = `PM <i class="fa-solid fa-moon"></i>`
+//         else check = `AM <i class="fa-solid fa-sun"></i>`
+//         let time = `<div>${timehour}:${timeminute}:${timesecond} ${check}</div>`
+//         console.log(time)
+//         headerTime.innerHTML = time;
+//     }, 1000)
+// // set time
 
 // set add-cart
     const addButtons = document.querySelectorAll('.add-button');

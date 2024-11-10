@@ -14,11 +14,6 @@
     .footer-information__div--social a .img-pay{
         margin-left: 2%;
     }
-    .form-input{
-        background: transparent;
-        border: 0;
-        outline: 0;
-    }
     .form-group{
         margin: 40px;
     }
@@ -26,13 +21,21 @@
         width: 70%;
         margin-left: 60px;
     }
+    .form-group label:hover{
+        color: #54a0ff;
+    }
 }
 /* iPhone 6/7/8 */
 @media (max-width: 768px) {
     body{
-        background-image: url("./img_dangnhap/wallpaperflare-cropped.jpg");
+        background-image: url(./img_dangnhap/wallpaperflare-cropped.jpg);
         background-size: 120%;
         background-position-y: -50px;
+    }
+    .webname{
+        padding-right: 10px;
+        color: #fff;
+        
     }
     .main-container{
         margin-top: 50px;
@@ -62,20 +65,59 @@
     }
     .form-input{
         background: transparent;
-        border: 0;
+        border-bottom: 1px solid white;
         outline: 0;
         color: #f5f5f5;
         flex-grow: 1;
+        padding-right: 26px;
+        width: 170px;
+        height: 20px;
     }
     .form-group i{
         color: #fff;
         font-size: 10px;
     }
     .form-group{
-        border-bottom: 1px solid #fff;
         margin-top: 15px;
         margin-bottom: 20px;
     }
+    label:hover{
+        color: #54a0ff;
+    }
+        /* <div class="form-group success"> */
+
+    .form-group.success input {
+        border: 2px solid green;
+    }
+    .form-group.success .message {
+        color: green;
+        font-weight: 900;
+        font-size: 12px;
+        visibility: visible;
+        display: block;
+        /* content: "Passed."; */
+    }
+
+    /* <div class="form-group eror"> */
+    .form-group.error input {
+        border: 2px solid red;
+    }
+    .form-group.error .message {
+        visibility: visible;
+        font-size: 10px;
+        margin-top: 10px;
+        display: block;
+        color: red;
+    }
+
+    .form-group .error input{
+        border-bottom: 1px solid red;
+    }
+    .form-group .error .message {
+        visibility: visible;
+        display: block;
+        color: red;
+    }    */
     .form-submit{
         background: transparent;
         border: 1px solid #f5f5f5;
@@ -84,11 +126,10 @@
         text-transform: uppercase;
         padding: 6px 10px;
         transition: 0.25s ease-in-out;
-        margin-top: 20px;
+        margin-top: 30px;
     }
-    .form-submit::hover{
+    .form-submit:hover{
         border: 1px solid #54a0ff;
-    
     }
     .logo-dangnhap{
         width: 30px;
@@ -145,20 +186,48 @@
     }
     .form-input{
         background: transparent;
-        border: 0;
+        border-bottom: 1px solid white;
         outline: 0;
         color: #f5f5f5;
         flex-grow: 1;
+        padding-right: 26px;
+        width: 230px;
+        height: 30px;
     }
     .form-group i{
         color: #fff;
         font-size: 20px;
     }
+        /* <div class="form-group success"> */
+
+    .form-group.success input {
+        border: 2px solid green;
+    }
+    .form-group.success .message {
+        color: green;
+        font-weight: 900;
+        font-size: 15px;
+        visibility: visible;
+        display: block;
+        /* content: "Passed."; */
+    }
+
+    /* <div class="form-group eror"> */
+    .form-group.error input {
+        border: 2px solid red;
+    }
+    .form-group.error .message {
+        visibility: visible;
+        font-size: 11px;
+        margin-top: 10px;
+        display: block;
+        color: red;
+    }
     ::placeholder.form-input{
         font-size: 50px;
     }
     .form-group{
-        border-bottom: 1px solid #fff;
+        /* border-bottom: 1px solid #fff; */
         margin-top: 30px;
         margin-bottom: 50px;
         margin-left: 80px;
@@ -168,16 +237,15 @@
         background: transparent;
         border: 1px solid #f5f5f5;
         color: #fff;
-        width: 50%;
+        width: 60%;
+        height: 40px;
         text-transform: uppercase;
         padding: 6px 10px;
         transition: 0.25s ease-in-out;
-        margin-top: 40px;
-        margin-left: 25%;
+        margin-left: 20%;
     }
-    .form-submit::hover{
-        border: 1px solid #54a0ff;
-    
+    .form-group label:hover{
+        color: #54a0ff;
     }
     .logo-dangnhap{
         width: 60px;
@@ -190,7 +258,7 @@
     .form-dangky{
         font-size: 20px;
         color: #fff;
-        padding-top: 30px;
+        padding-top: 20px;
         text-align: center;
     }
     ::placeholder{
@@ -207,4 +275,5 @@
     .toggle{
         display: none;
     }
+    .form-or{}
 }

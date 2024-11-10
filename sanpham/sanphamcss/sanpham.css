@@ -9,22 +9,11 @@
 .body {
   margin: 0px;
 }
-.header {
-  grid-area: header;
-  position: relative;
+
+.banner__div--slide #banner-img{
+  height: 305px;
   width: 100%;
 }
-
-.banner {
-  grid-area: banner;
-}
-.main {
-  grid-area: main;
-}
-.footer {
-  grid-area: footer;
-}
-
 /* Header-content */
 .header-content_img--logo {
   max-height: 100px;
@@ -212,6 +201,10 @@ a .header-icon__i--user {
   object-fit: cover;
 }
 
+.content{
+  text-align: justify;
+}
+
 /*ul.products li:hover {
   scale: 1.1;
   animation-duration: 2s;
@@ -222,6 +215,7 @@ a .header-icon__i--user {
 .products li .product-top {
   position: relative;
   overflow: hidden;
+  text-align: center;
 }
 
 .products li .product-top .product-thumb {
