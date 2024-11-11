@@ -9,9 +9,11 @@
     ></script>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link type="text/css" rel="stylesheet" href="./sanphamcss/sanpham.css" />
-    <link rel="stylesheet" href="../trangchu/assets/css/resposive.css" />
+    <link rel="stylesheet" href="./sanphamcss/home.css" />
+    <link rel="stylesheet" href="./sanphamcss/resposive.css" />
     <link rel="icon" href="./imgs/header-logo.png" />
     <link rel="stylesheet" href="./sanphamcss/responsivesanpham.css">
+    <script src="../shopping-cart/cart.js"></script>
     <title>Máy ảnh - Ống kính</title>
   </head>
   <body>
@@ -38,8 +40,8 @@
             <a href="../dangnhap/dangnhap.html"
               ><i class="fa-regular fa-user header-icon__i--user"></i
             ></a>
-            <i class="fa-solid fa-cart-shopping header-icon__i--shopping-cart"
-              ><div class="cart-button">0</div></i
+            <a class="fa-solid fa-cart-shopping header-icon__i--shopping-cart"
+             href="../shopping-cart/cart.html" ><div class="cart-button">0</div></a
             >
           </div>
         </div>
@@ -97,7 +99,7 @@
         <div class="pics4">
           <div class="pics41">
             <div class="pic1">
-              <img src=".\imgs\a1.jpg" alt="" />
+              <img src=".\imgs\a1.jpg" alt="" onclick="" />
             </div>
             <div class="pic2">
               <img src=".\imgs\a2.jpg" alt="" />
@@ -147,9 +149,9 @@
           </p>
           <h3>Máy ảnh, ống kính chính hãng</h3>
           <p>
-            Hiện nay, DriverShop là một trung tâm uy tín chuyên mua bán các loại tại
+            Hiện nay, Zshop là một trung tâm uy tín chuyên mua bán các loại tại
             Tp.HCM, Hà Nội, Cần Thơ ... với mức giá cực kì tốt cùng chế độ bảo
-            hành uy tín. Hãy đến ngay DriverShop để nhận được sự tư vấn nhiệt tình và
+            hành uy tín. Hãy đến ngay Zshop để nhận được sự tư vấn nhiệt tình và
             lựa chọn cho mình những sản phẩm tốt nhất nhé!
           </p>
         </div>
@@ -160,7 +162,7 @@
                 <a href="../sanpham/paramater/paramaterone.html" class="product-thumb">
                   <img src=".\imgs\products\RF_24-50mm__1_.jpg" alt="" />
                 </a>
-                <button href="" class="buy-now">Thêm vào giỏ hàng</button>
+                <button href="" class="buy-now" onclick="addToCart('1', 'Canon RF', 7690000)">Thêm vào giỏ hàng</button>
               </div>
               <div class="product-infor">
                 <a href="" class="product-cat">Lens</a>
@@ -180,7 +182,7 @@
                     alt=""
                   />
                 </a>
-                <button href="" class="buy-now">Thêm vào giỏ hàng</button>
+                <button href="" class="buy-now" onclick="addToCart('2', 'Sigma 28-105mm', 37490000)">Thêm vào giỏ hàng</button>
               </div>
               <div class="product-infor">
                 <a href="" class="product-cat">Lens</a>
@@ -197,7 +199,7 @@
                 <a href="./paramater/paramaterthree.html" class="product-thumb">
                   <img src=".\imgs\products\Z50F14__1_.jpg" alt="" />
                 </a>
-                <button href="" class="buy-now">Thêm vào giỏ hàng</button>
+                <button href="" class="buy-now" onclick="addToCart('3', 'Nikon NIKKOR Z', 13990000)">Thêm vào giỏ hàng</button>
               </div>
               <div class="product-infor">
                 <a href="" class="product-cat">Lens</a>
@@ -214,7 +216,7 @@
                 <a href="./paramater/paramaterfour.html" class="product-thumb">
                   <img src=".\imgs\products\AF2728-X-B__1_.jpg" alt="" />
                 </a>
-                <button href="" class="buy-now">Thêm vào giỏ hàng</button>
+                <button href="" class="buy-now" onclick="addToCart('4', 'TTArtisan AF', 3990000)">Thêm vào giỏ hàng</button>
               </div>
               <div class="product-infor">
                 <a href="" class="product-cat">Lens</a>
@@ -234,7 +236,7 @@
                     alt=""
                   />
                 </a>
-                <button href="" class="buy-now">Thêm vào giỏ hàng</button>
+                <button href="" class="buy-now" onclick="addToCart('5', 'Canon EOS RP', 18990000)">Thêm vào giỏ hàng</button>
               </div>
               <div class="product-infor">
                 <a href="" class="product-cat">Camera</a>
@@ -249,7 +251,7 @@
                 <a href="./paramater/paramatersix.html" class="product-thumb">
                   <img src=".\imgs\products\FUJIFILM_X-T50B.jpg" alt="" />
                 </a>
-                <button href="" class="buy-now">Thêm vào giỏ hàng</button>
+                <button href="" class="buy-now" onclick="addToCart('6', 'Fujifilm X-T50', 37990000)">Thêm vào giỏ hàng</button>
               </div>
               <div class="product-infor">
                 <a href="" class="product-cat">Camera</a>
@@ -264,7 +266,7 @@
                 <a href="./paramater/paramaterseven.html" class="product-thumb">
                   <img src=".\imgs\products\z6iii__1_1.jpg" alt="" />
                 </a>
-                <button href="" class="buy-now">Thêm vào giỏ hàng</button>
+                <button href="" class="buy-now" onclick="addToCart('7', 'Nikon Z6 III', 66990000)">Thêm vào giỏ hàng</button>
               </div>
               <div class="product-infor">
                 <a href="" class="product-cat">Camera</a>
@@ -284,7 +286,7 @@
                     alt=""
                   />
                 </a>
-                <button href="" class="buy-now">Thêm vào giỏ hàng</button>
+                <button href="" class="buy-now" onclick="addToCart('8', 'Sony Alpha', 47490000)">Thêm vào giỏ hàng</button>
               </div>
               <div class="product-infor">
                 <a href="" class="product-cat">Camera</a>
@@ -367,7 +369,7 @@
         </div>
       </footer>
     </div>
-    <script src="./sanpham.js"></script>
+    <script src="../sanpham/sanpham.js"></script>
     <script>
       const likebutton = document.querySelector('.icon-like');
     let likeText = Math.floor(Math.random() * (1000 - 10) + 10);
