@@ -35,12 +35,12 @@
  
  let index__banner = 1;
     const changeImage = () => {
-        let imgs = ["../trangchu/assets/imgs/banner-img/banner--one.png", 
-                    "../trangchu/assets/imgs/banner-img/banner--two.png", 
-                    "../trangchu/assets/imgs/banner-img/banner--three.png", 
-                    "../trangchu/assets/imgs/banner-img/banner--four.png",
-                    "../trangchu/assets/imgs/banner-img/banner--five.png",
-                    "../trangchu/assets/imgs/banner-img/banner--six.png"
+        let imgs = ["./trangchu/assets/imgs/banner-img/banner--one.png", 
+                    "./trangchu/assets/imgs/banner-img/banner--two.png", 
+                    "./trangchu/assets/imgs/banner-img/banner--three.png", 
+                    "./trangchu/assets/imgs/banner-img/banner--four.png",
+                    "./trangchu/assets/imgs/banner-img/banner--five.png",
+                    "./trangchu/assets/imgs/banner-img/banner--six.png"
                 ];
         document.getElementById('banner-img').src = imgs[index__banner]
         index__banner++;
