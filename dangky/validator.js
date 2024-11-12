@@ -106,7 +106,7 @@ form1.addEventListener('submit', (e)=>{
         submitbox.classList.add('show', 'boxvalid');
         submitbox.innerText = ("Bạn đã tạo tài khoản thành công.");
         setTimeout(()=>{
-            window.location.href = "../trangchu/index.html";
+            window.location.href = "../index.html";
         }, 5000)
         
     } else {

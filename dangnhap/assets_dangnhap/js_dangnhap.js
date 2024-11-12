@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (passwordInput.value.trim() === '') {
             errorMessage(passwordInput, "Vui lòng không bỏ trống mật khẩu.");
         } else if(passwordInput.value.length < 6) {
-            errorMessage(passwordInput, "Mật khẩu phải nhiều hơn 6 ký tự")
+            errorMessage(passwordInput, "Mật khẩu phải nhiều hơn 6 ký tự.")
         } else {
             successMessage(passwordInput);
         }
@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (usernameInput.parentElement.classList.contains('success') &&
             passwordInput.parentElement.classList.contains('success')) {
             alert("Đăng nhập thành công!");
-            window.location.href = '../trangchu/index.html';
+            window.location.href = '../index.html';
         }
         else{
             alert("Bạn nhập sai hoặc còn trường trống chưa nhập.")
