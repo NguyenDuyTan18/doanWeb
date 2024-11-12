@@ -158,14 +158,19 @@
     }
     .modal-thank__container button {
         left: 348px;
-        font-size: 30px;
+        font-size: 14px;
         top: 12px;
         left: 305px;
     }
 
-    .modal-thank-subcontent {
+    /* .modal-thank-subcontent {
         margin: 10px;
+    } */
+
+    .modal-thank--content img{
+        padding: 1px;
     }
+
     .modal-thank__container{
         min-height: 300px;
         
