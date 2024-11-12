@@ -22,19 +22,11 @@ function addToCart(id, name, price) {
 }
 // Tìm kiếm Id và update Local [] mới sau đó dùng chuỗi để xóa 
 function DeleteCart(element){
-    let s ;
-    if(!element.previousSibling){
-            s = element;
-    } else{
-            s = String(element.previousSibling.textContent);
-    }
-    s = s.trim();
-    s = s.charAt(0);
-    console.log(s)
+    console.log(element.parentElement.parentElement.children[1].textContent)
     let updateDeleteCart = [];
     let customerCart = JSON.parse(localStorage.getItem("cart"));
     customerCart.forEach(item =>{
-        if(item.id != parseInt(s)) {
+        if(item.id != element.parentElement.parentElement.children[1].textContent) {
             updateDeleteCart.push(item)
         }
     })
@@ -49,7 +41,6 @@ function displayCart() {
     let showMoney = document.querySelector('.showMN');
     // Kiểm tra nếu giỏ hàng rỗng
     if (cart.length === 0) {
-        cartContainer.innerHTML = "<p>Giỏ hàng trống</p>";
         return;
     }
     // Tạo danh sách sản phẩm trong giỏ hàng
@@ -59,21 +50,28 @@ function displayCart() {
         cartContainer.innerHTML += `
             <tr>
             
-                <td>${item.id}</td>
-                <td>${item.name}</td>
-                <td>${item.price}</td>
-                <td>${item.quantity}</td>
-                <td>${item.price * item.quantity}</td>
                 <td>${++no}</td>
-                <td>
-                    <button class="btn btn-danger btn-sm" onclick = "DeleteCart(this)">Xóa</button>
+                <td style="display:none;">${item.id}</td>
+                <td>${item.name}</td>
+                <td>${formatCurrency(item.price)}</td>
+                <td>${item.quantity}</td>
+                <td>${formatCurrency(item.price * item.quantity)}</td>
+                <td style="text-align: center;">
+                    <button class="btn" onclick = "DeleteCart(this)"><i class="fa-solid fa-trash"></i></button>
                 </td>
             
             </tr>
-            <br>
+           
             
         `;
     });
-    showMoney.innerHTML = `<p> Tổng cộng: ${total} VND`;
+    showMoney.innerHTML = `<p> Total: ${formatCurrency(total)}`;
     
+}
+
+const formatCurrency = (value, locale = "vi-VN") =>{
+    return new Intl.NumberFormat(locale, {
+        style: 'currency',
+        currency: 'VND'
+    }).format(value)
 }

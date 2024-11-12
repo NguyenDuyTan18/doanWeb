@@ -178,6 +178,9 @@ a .header-icon__i--user {
 .pic8 {
   margin: 6px;
 }
+.pic1:hover img, .pic2:hover img, .pic3:hover img, .pic4:hover img, .pic5:hover img, .pic6:hover img, .pic7:hover img, .pic8:hover img{
+  opacity: 0.5;
+}
 
 .products {
   display: flex;
@@ -250,7 +253,7 @@ a .header-icon__i--user {
   text-decoration: none;
 }
 
-.products li .product-infor a.product-cat {
+.products li .product-infor div.product-cat {
   font-size: 11px;
   text-transform: uppercase;
   color: #9e9e9e;

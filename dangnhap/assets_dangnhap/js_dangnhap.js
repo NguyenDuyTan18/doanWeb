@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (usernameInput.parentElement.classList.contains('success') &&
             passwordInput.parentElement.classList.contains('success')) {
             alert("Đăng nhập thành công!");
-            window.location.href = 'http://127.0.0.1:5500/index.html';
+            window.location.href = '../trangchu/index.html';
         }
         else{
             alert("Bạn nhập sai hoặc còn trường trống chưa nhập.")

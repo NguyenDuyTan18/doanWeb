@@ -22,9 +22,6 @@
     .pic1 img, .pic2 img, .pic3 img, .pic4 img, .pic5 img, .pic6 img, .pic7 img, .pic8 img{
         width: 100%;
     }
-    .pic1:hover img, .pic2:hover img, .pic3:hover img, .pic4:hover img, .pic5:hover img, .pic6:hover img, .pic7:hover img, .pic8:hover img{
-        opacity: 0.5;
-    }
     
 }
 @media (min-width: 451px) and (max-width:1023px) {

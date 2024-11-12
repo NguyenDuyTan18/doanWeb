@@ -9,15 +9,6 @@
     width: 100%;
 }
 
-/* .banner{
-    grid-area: banner;
-}
-.main{
-    grid-area: main;
-}
-.footer{
-    grid-area: footer;
-} */
 
 /* Header-content */
 .header-content_img--logo{
@@ -63,14 +54,14 @@
 }
 
 a .header-icon__i--user{
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 500;
     color: black;
 }
 
 .header-icon__i--shopping-cart{
     margin-left: 70px;
-    font-size: 20px;
+    font-size: 30px;
     color: black;
     position: relative;
 }

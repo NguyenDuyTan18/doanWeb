@@ -3,42 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Giỏ hàng của bạn</title>
+    <script src="https://kit.fontawesome.com/7765121905.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="../trangchu/assets/imgs/header-img/header-logo.png">
+    <title>Giỏ hàng</title>
     <script src="../shopping-cart/cart.js" defer></script>
+    <style>
+        body{
+            background-image: url('../dangnhap/assets_dangnhap/img_dangnhap/wallpaperflare-cropped.jpg');
+            background-size: cover;
+            background-position-x: left;
+            background-repeat: no-repeat;
+            color: white;
+            
+        }
+        h1{
+            text-align: center;
+            margin: 20px;
+            
+        }
+        .table {
+            margin: 0 auto;
+            border: 1px solid rgb(207, 202, 202);
+            border-collapse:collapse;
+            margin-bottom: 30px;
+        }
+        .thead-dark th{
+            padding: 30px;
+            margin: 10px;
+            border-collapse:collapse;
+            border: 1px solid rgb(207, 202, 202);
+        }
+        #cart-container{
+            text-align: center;
+        }
+        #cart-container tr td{
+            padding: 10px;
+            margin: 10px;
+            border-collapse:collapse;
+            border: 1px solid rgb(207, 202, 202);
+        }
+        .btn{
+            padding: 5px;
+        }
+        .showMN-container{
+            float: right;
+            margin-right: 20%;
+            
+        }
+        .showMN-container .order-total{
+            font-size: 30px;
+            text-transform: uppercase;
+            font-weight: 600;
+        }
+        .showMN-container p{
+            margin-top: 5px;
+            font-size: 20px;
+            margin-left: 10px;
+        }
+        a{
+            margin-left: 25%;
+            margin-top: 30px;
+            text-decoration: none;
+            color: blue;
+            font-size: 20px;
+            padding: 5px;
+            border: 1px solid rgb(255, 255, 255);
+            border-radius: 10px;
+            background-color: rgb(255, 255, 255);;
+        }
+        a:hover{
+            background-color: rgba(0,0,0,0.01);
+            color: red;
+        }
+        @media  (max-width: 450px) {
+            body{
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+
+            .showMN-container{
+                margin-right: -30%;
+            }
+            a{
+                margin-left: 2%;
+            }
+
+            h1{
+                margin-left: 45%;
+            }
+        }
+    </style>
 </head>
 <body onload="displayCart()">
-    <h1>Giỏ hàng của bạn</h1>
-    <table class="table table-bordered">
+    <h1>Giỏ hàng <i class="fa-solid fa-cart-shopping"></i></h1>
+    <table class="table ">
         <thead class="thead-dark">
             <tr>
-                <th>ID</th>
-                <th>Sản phẩm</th>
-                <th>Giá</th>
-                <th>Số lượng</th>
-                <th>Tổng</th>
                 <th>No</th>
-                <th>Hành động</th>
+                <th>Product</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Delete</th>
             </tr>
         </thead>
-        <tbody>
-            <!-- <tr>
-                <td>Sản phẩm 1</td>
-                <td>100,000 VND</td>
-                <td>
-                    1
-                </td>
-                <td>100,000 VND</td>
-                <td>
-                    <button class="btn btn-danger btn-sm">Xóa</button>
-                </td>
-            </tr> -->
-            
-        </tbody>
+        <tbody id="cart-container"></tbody>
     </table>
-    <div id="cart-container"></div>
-    <div class="showMN">
-        
+    <div class="showMN-container">
+        <div class="order-total">Order Total</div>
+        <div class="showMN"></div>
     </div>
-    <a href="../sanpham/sanpham.html">Quay lại trang sản phẩm</a>
+    <a href="../sanpham/sanpham.html">TRANG SẢN PHẨM <i class="fa-solid fa-backward"></i></a>
 </body>
 </html>
