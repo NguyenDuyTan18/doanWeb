@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7765121905.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../../trangchu/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../trangchu/assets/css/resposive.css">
+    <link rel="icon" href="../trangchu/assets/imgs/header-img/header-logo.png">
+    <title>Products detail</title>
+    <style>
+        .overflow{
+            overflow: hidden;
+        }
+        h1{
+            text-align: center;
+            margin-top: 15px;
+            margin-bottom: 30px;
+        }
+        .mess{
+            background-color: #f0f0f0;
+            border: 1px solid #78afb6;
+            padding: 15px 5px;
+            border-radius: 10px;
+            min-width:  350px;
+            text-align: center;
+            font-size: 18px;
+            margin: 15px 0;
+        }
+        .mess:hover{
+            background-color: rgba(0, 0, 0, 0.03);
+        }
+        .mess a,  .pay-quickly a{
+            color: black;
+            text-decoration: none;
+            font-weight: 400;   
+        }
+        
+        .pay-quickly a{
+            color: white;
+        }
+        .pay-quickly{
+            background-color: #4caf50;
+            border: 1px solid #78afb6;
+            padding: 15px 5px;
+            border-radius: 10px;
+            text-align: center;
+            font-size: 18px;
+            max-width: 200px;
+            margin: 15px 0;
+        }
+        .pay-quickly:hover{
+            background: orangered;
+            cursor: pointer;
+        }
+        .main-describe-details{
+            margin-left: 45%;
+        }
+        .main-describe__item--infor{
+            margin-top: 10px;
+        }
+        ul{
+            color: #0071e3;
+            font-weight: 600;
+            margin: 20px;
+        }
+        li{
+            margin: 10px 10px;
+            list-style-type: disc;
+            
+        }
+        .main-describe__container{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        .main-describe__item--pic{
+            width: 50%;
+            display: flex;
+            align-items: end;
+        }
+        .main-describe__item--pic img{
+            width: 100%;
+        }
+
+        .describe-sub{
+            margin-top: 30px;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+
+        }
+        
+        .describe-sub h1{
+            margin-top: 10px;
+        }
+
+        .describe-sub div{
+            padding: 10px;
+            margin-top: 30px;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+       
+       
+        
+        @media (max-width: 450px){
+            .main-describe, .main-describe__item--pic{
+                display: block;
+            }
+            .main-describe__container{
+                display: block;
+            }
+
+            .main-describe__item--pic{
+                width: 100%;
+                display: flex;
+                align-items: end;
+            }
+
+            h2{
+                text-align: center;
+            }
+            .details-pay {
+                height: 190px;
+            }
+            .details-pay img {
+                width: 79%;
+            }
+            .pay-quickly{
+                max-width: 500px;
+            }
+            
+            .main h1{
+                margin: 5px;
+            }
+            
+        }
+
+
+        
+    </style>
+</head>
+<body>
+    <div  class="root overflow">
+        <div class="header">
+            <div class="header-content">
+                <img src="../trangchu/assets/imgs/header-img/header-logo1.png" alt="Logo-shop" class="header-content_img--logo">
+                <div class="header-content__container">
+                    <div class="header-content__container--search">
+                        <input type="text" class="header-icon__input--search" value="" placeholder="Search...">
+                        <i class="fa-solid fa-magnifying-glass header-icon__i--search"></i>
+                    </div>
+                    <a href="../dangnhap/dangnhap.html"><i class="fa-regular fa-user header-icon__i--user"></i></a>
+                    <a href="../shopping-cart/cart.html" class="fa-solid fa-cart-shopping header-icon__i--shopping-cart"></a>
+                </div>
+            </div>
+            <div class="header-nav">
+                <div class="menu-bar"><i class="fa-solid fa-bars"></i></div>
+               
+                    <div class="header-nav__div--trangchu"><a href="../index.html"><i class="fa-solid fa-house"></i> TRANG CHỦ <i class="fa-solid fa-chevron-down"></i></a></div>
+                    <div class="header-nav__div--camera"><a href="../sanpham/sanpham.html"><i class="fa-solid fa-camera-retro"></i> MÁY ẢNH - ỐNG KÍNH <i class="fa-solid fa-chevron-down"></i></a></div>
+                    <div class="header-nav__div--camera-accessory"><a href="#"><i class="fa-regular fa-floppy-disk"></i> PHỤ KIỆN MÁY ẢNH <i class="fa-solid fa-chevron-down"></i></a></div>
+                    <div class="header-nav__div--laptop"><a href="#"><i class="fa-solid fa-laptop"></i> MÁY TÍNH - LAPTOP <i class="fa-solid fa-chevron-down"></i></a></div>
+                    <div class="header-nav__div--laptop-accessory"><a href="#"><i class="fa-solid fa-microchip"></i> PHỤ KIỆN MÁY TÍNH <i class="fa-solid fa-chevron-down"></i></a></div> 
+               
+            </div>
+        </div>
+
+        <main id="sp1"  class="hidden">
+            <h1>Canon RF 24-50mm f/4.5-6.3 IS STM (Chính hãng)</h1>
+            <div class="main-describe">
+                <div class="main-describe__container">
+                    <div class="main-describe__item--pic">
+                        <img src="./para-pics/sp1.jpg" alt="Canon RF 24-50mm f/4.5-6.3 IS STM (Chính hãng)">
+                    </div>
+                    <div class="main-describe__item--infor">
+                        <div class="price">
+                            <h2>7,690,000đ</h2>
+                            <div class="mess"><a href="https://www.messenger.com/"><i class="fa-regular fa-comment"></i> Inbox 
+                                <strong > TẠI ĐÂY </strong>  để nhận giá siêu tốt!</a>
+                            </div>
+                            <div class="pay-quickly">
+                                <a href="https://payoo.vn/"><i class="fa-regular fa-hand-point-up"></i> Mua nhanh</a>
+                            </div>
+                        </div>
+                        <ul><strong>Thông tin nổi bật:</strong></ul>
+                        <li>Ngàm RF định dạng full frame</li>
+                        <li>Khẩu độ f/4.5-6.3 đến f/22-32</li>
+                        <li>Gồm 2 thấu kính phi cầu </li>
+                        <li>Lớp phủ Super Spectra Coating</li>
+                        <li>Động cơ lấy nét tự động STM</li>
+                        <li>Ổn định hình ảnh quang học</li>
+                        <li>Khoảng cách lấy nét gần nhất 30cm</li>
+                        <li>Vòng điều khiển lấy nét</li>
+                        <li>7 lá khẩu</li>
+                        <li>Kích cỡ kính lọc: 58mm (phía trước)</li>
+                        <li>Trọng lượng: 210g</li>
+                    </div>
+                </div>
+                <div class="describe-sub">
+                    <h1><i class="fa-solid fa-audio-description"></i> Mô tả</h1>
+                    <div class=""><strong>Canon RF 24-50mm STM</strong> có thiết kế nhẹ và nhỏ gọn, là ống kính zoom tiêu chuẩn linh hoạt bao gồm các tiêu cự góc rộng đến tiêu cự xem bình thường. Được thiết kế để sử dụng hàng ngày và là sự lựa chọn tuyệt vời để làm vlog và sáng tạo nội dung, ống kính này rất phù hợp để chụp phong cảnh, cảnh thành phố, cảnh đường phố, chân dung, sản phẩm. Động cơ lấy nét tự động bước STM tạo ra hiệu suất lấy nét tự động nhanh, mượt mà và gần như im lặng để hỗ trợ cả ảnh tĩnh và quay video, đồng thời bộ ổn định hình ảnh quang học bù rung máy lên đến 4.5 điểm dừng hoặc lên đến 7 điểm dừng khi ghép với thân máy ảnh EOS R có IBIS tương thích để cho phép chụp ảnh cầm tay sắc nét hơn trong điều kiện ánh sáng phức tạp.</div>
+                </div>
+            </div>
+        </main>
+
+        <main id="sp2" class="hidden">
+            <h1>Sigma 28-105mm f/2.8 DG DN Art Sony E (Chính hãng)</h1>
+            <div class="main-describe">
+                <div class="main-describe__container">
+                    <div class="main-describe__item--pic">
+                        <img src="./para-pics/sp2.jpg" alt="Sigma 28-105mm f/2.8 DG DN Art Sony E (Chính hãng)">
+                    </div>
+                    <div class="main-describe__item--infor">
+                        <div class="price">
+                            <h2>37,490,000 đ</h2>
+                            <div class="mess"><a href="https://www.messenger.com/"><i class="fa-regular fa-comment"></i> Inbox 
+                                <strong > TẠI ĐÂY </strong>  để nhận giá siêu tốt!</a>
+                            </div>
+                            <div class="pay-quickly">
+                                <a href="https://payoo.vn/"><i class="fa-regular fa-hand-point-up"></i> Mua nhanh</a>
+                            </div>
+                        </div>
+                        <ul><strong>Thông tin nổi bật:</strong></ul>
+                        <li>Ngàm Sony E định dạng full frame</li>
+                        <li>Khẩu độ f/2.8 đến f/22</li>
+                        <li>Hệ thống lấy nét tự động tuyến tính phản hồi cao kép HLA </li>
+                        <li>Gồm các thấu kính FLD, SLD và phi cầu</li>
+                        <li>Khoảng cách lấy nét gần nhất 40cm</li>
+                        <li>Vòng chỉnh khẩu độ với các cần gạt khóa và nhấp tiếng</li>
+                        <li>Lớp phủ Nano Porous và Super Multi-Layer Coating, chống dầu, nước</li>
+                        <li>Thiết kế kháng bụi, giọt bắn</li>
+                        <li>12 lá khẩu tròn</li>
+                        <li>Kích cỡ kính lọc: 82mm (phía trước)</li>
+                        <li>Trọng lượng: 990g</li>
+                    </div>
+                </div>
+                <div class="describe-sub">
+                    <h1><i class="fa-solid fa-audio-description"></i> Mô tả</h1>
+                    <div class=""><strong>Sigma 28-105mm f/2.8 DG DN Art Sony E</strong> linh hoạt với phạm vi zoom rộng và khẩu độ không đổi nhanh, bao gồm nhiều tiêu cự phổ biến khác nhau, trang bị cho bạn để chụp mọi thứ từ phong cảnh bao quát đến chân dung thân mật, tất cả chỉ bằng một ống kính. Được thiết kế cho hệ thống máy ảnh không gương lật full frame Sony ngàm E, ống kính này cung cấp khoảng cách lấy nét tối thiểu là 40cm trên toàn bộ phạm vi zoom, đảm bảo khả năng chụp cận cảnh chi tiết của đối tượng. Được điều khiển bởi động cơ HLA, ống kính này mang lại những lợi ích lấy nét tự động yên tĩnh và chính xác, đồng thời 12 lá khẩu tròn đảm bảo hiệu ứng bokeh tròn trịa và đẹp mắt. Ống kính này đẩy lùi tác hại từ các yếu tố bên ngoài bằng cách kết hợp lớp phủ chống thấm nước và dầu với thiết kế chống bụi và giọt bắn.
+                    </div>
+                </div>
+                
+                </div>
+            </div>
+            
+        </main>
+
+
+        <main id="sp3" class="hidden">
+            <h1>Nikon NIKKOR Z 50mm f/1.4 (Chính hãng VIC)</h1>
+            <div class="main-describe">
+                <div class="main-describe__container">
+                    <div class="main-describe__item--pic">
+                        <img src="./para-pics/sp3.jpg" alt="Nikon NIKKOR Z 50mm f/1.4 (Chính hãng VIC)">
+                    </div>
+                    <div class="main-describe__item--infor">
+                        <div class="price">
+                            <h2>13,990,000 đ</h2>
+                            <div class="mess"><a href="https://www.messenger.com/"><i class="fa-regular fa-comment"></i> Inbox 
+                                <strong > TẠI ĐÂY </strong>  để nhận giá siêu tốt!</a>
+                            </div>
+                            <div class="pay-quickly">
+                                <a href="https://payoo.vn/"><i class="fa-regular fa-hand-point-up"></i> Mua nhanh</a>
+                            </div>
+                        </div>
+                        <ul><strong>Thông tin nổi bật:</strong></ul>
+                        <li> Ngàm Z dòng full frame </li>
+                        <li>Khẩu độ f/1.4 đến f/16</li>
+                        <li>Gồm 2 thấu kính phi cầu </li>
+                        <li>Động cơ lấy nét tự động động cơ bước STM</li>
+                        <li>Khoảng cách lấy nét gần nhất 37cm</li>
+                        <li>Vòng điều khiển không tiếng nhấp có thể tùy chỉnh</li>
+                        <li>Cấu trúc kháng thời tiết</li>
+                        <li>Kích cỡ kính lọc: 62mm (phía trước)</li>
+                        <li>Trọng lượng: 420g</li>
+                    </div>
+                </div>
+                <div class="describe-sub">
+                    <h1><i class="fa-solid fa-audio-description"></i> Mô tả</h1>
+                    <div class=""><strong>Nikon NIKKOR Z 50mm f/1.4</strong> là ống kính một tiêu cự tiêu chuẩn lý tưởng để chụp ảnh chân dung, phong cảnh, đường phố, chụp nhanh và cận cảnh. Khẩu độ tối đa f/1.4 sáng dễ dàng làm nổi bật chủ thể bằng xóa phông và bokeh nổi bật, mượt mà. Ống kính này cũng hoạt động xuất sắc trong tình huống ánh sáng yếu, cho phép giảm giá trị ISO và tăng chất lượng hình ảnh. Được điều khiển bởi động cơ bước STM, tiếng ồn khi vận hành được giảm thiểu và mang lại hiệu suất lấy nét tự động nhanh chóng. Tính linh hoạt và tính di động biến ống kính này trở thành sự bổ sung tuyệt vời cho bất kỳ máy ảnh không gương lật dòng Z nào.</div>
+                </div>
+            </div>
+            
+
+            
+        </main>
+
+
+        <main id="sp4" class="hidden">
+            <h1>TTArtisan AF 27mm f/2.8 for Fujifilm (Chính hãng)</h1>
+            <div class="main-describe">
+                <div class="main-describe__container">
+                    <div class="main-describe__item--pic">
+                        <img src="./para-pics/sp4.jpg" alt="TTArtisan AF 27mm f/2.8 for Fujifilm (Chính hãng)">
+                    </div>
+                    <div class="main-describe__item--infor">
+                        <div class="price">
+                            <h2>3,990,000 đ</h2>
+                            <div class="mess"><a href="https://www.messenger.com/"><i class="fa-regular fa-comment"></i> Inbox 
+                                <strong > TẠI ĐÂY </strong>  để nhận giá siêu tốt!</a>
+                            </div>
+                            <div class="pay-quickly">
+                                <a href="https://payoo.vn/"><i class="fa-regular fa-hand-point-up"></i> Mua nhanh</a>
+                            </div>
+                        </div>
+                        <ul><strong>Thông tin nổi bật:</strong></ul>
+                        <li>Ngàm Fujifilm X định dạng APS-C </li>
+                        <li>Tiêu cự 40.5mm (tương đương full frame)</li>
+                        <li>Khẩu độ f/2.8 đến f/16</li>
+                        <li>Động cơ AF bước STM</li>
+                        <li>Khoảng cách lấy nét gần nhất 35cm</li>
+                        <li>7 lá khẩu</li>
+                        <li>Kích cỡ kính lọc: 39mm (phía trước)</li>
+                    </div>
+                </div>
+                <div class="describe-sub">
+                    <h1><i class="fa-solid fa-audio-description"></i> Mô tả</h1>
+                    <div class=""><strong>TTArtisan AF 27mm f/2.8</strong> nổi bật với thiết kế pancake không phô trương dành cho máy ảnh Fujifilm ngàm X, đây là ống kính đa năng linh hoạt để sử dụng hàng ngày. Rất phù hợp để chụp phong cảnh, cảnh đường phố, chân dung, ống kính lấy nét tự động này sử dụng động cơ bước STM để nhanh chóng ghi lại những khoảnh khắc chụp ảnh hoàn hảo. Ống kính cũng tương thích với các chế độ theo dõi mắt để theo dõi hiệu quả trong quá trình quay video. Khoảng cách lấy nét tối thiểu là 35cm, đồng thời ống kính có khẩu độ tối đa f/2.8 và màng chắn bảy lá khẩu mang lại hiệu ứng bokeh rõ rệt để tạo hiệu ứng ấn tượng.</div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <main id="sp5" class="hidden">
+            <h1>Canon EOS RP (Hàng Mới Nhập Khẩu, Body Only)</h1>
+            <div class="main-describe">
+                <div class="main-describe__container">
+                    <div class="main-describe__item--pic">
+                        <img src="./para-pics/sp5.jpg" alt="">
+                    </div>
+                    <div class="main-describe__item--infor">
+                        <div class="price">
+                            <h2>18,990,000 đ</h2>
+                            <div class="mess"><a href="https://www.messenger.com/"><i class="fa-regular fa-comment"></i> Inbox 
+                                <strong > TẠI ĐÂY </strong>  để nhận giá siêu tốt!</a>
+                            </div>
+                            <div class="pay-quickly">
+                                <a href="https://payoo.vn/"><i class="fa-regular fa-hand-point-up"></i> Mua nhanh</a>
+                            </div>
+                        </div>
+                        <ul><strong>Thông tin nổi bật:</strong></ul>
+                        <li>Cảm biến CMOS full frame 26.2MP</li>
+                        <li>Bộ xử lý hình ảnh DIGIC 8</li>
+                        <li>Quay phim 4K</li>
+                        <li>Chụp liên tiếp 5fps</li>
+                        <li>Hệ thống lấy nét tự động Dual Pixel CMOS AF</li>
+                        <li>Kính ngắm điện tử OLED 2.36m-Dot</li>
+                        <li>Màn hình cảm ứng, xoay lật LCD 3.0''</li>
+                        <li>ISO 100 - 40000 (mở rộng đến 50, 51200, 102400)</li>
+                        <li>Tích hợp DLO, RAW, tương thích C-RAW</li>
+                        <li>Kết nối Wi-Fi và Bluetooth</li>
+                    </div>
+                </div>
+                <div class="describe-sub">
+                    <h1><i class="fa-solid fa-audio-description"></i> Mô tả</h1>
+                    <div class="">Tiếp nối thành công sau bước đầu của công cuộc phát triển dòng máy ảnh mirrorless, <strong>Canon EOS RP</strong> nhỏ gọn đầy ấn tượng dù được trang bị cảm biến full-frame khủng cung cấp khả năng xử lý hình ảnh linh hoạt cùng một yếu tố hình thức di động. Trang bị cảm biến CMOS full-frame 26.2MP độ phân giải cao cùng với bộ xử lý hình ảnh DIGIC 8, cả ảnh tĩnh và video đều có thể được ghi bằng phạm vi độ nhạy sáng rộng đến mức ISO 40000, tốc độ chụp ảnh 5fps và khả năng quay phim 4K.
+                        <br>
+                        Đồng thời, để phù hợp làm việc trong nhiều điều kiện ánh sáng khác nhau, cảm biến cũng tạo điều kiện cho hệ thống lấy nét tự động Dual Pixel CMOS AF tiên tiến, lấy nét nhanh và chính xác trong khi chụp ảnh tĩnh và quay video. Bổ sung cho cảm biến và bộ xử lý, Canon EOS RP cũng trang bị kính ngắm điện tử 2.36m-dot cùng với màn hình LCD tinh thể lỏng cảm ứng có thể xoay lật để dễ nhìn hơn từ các góc cao và thấp. Ngoài ra, Wi-Fi và Bluetooth cho phép điều khiển camera từ xa không dây, chia sẻ hình ảnh trực tiếp với các thiết bị di động được liên kết.</div>
+                </div>
+            </div> 
+        </main>
+
+
+
+        <main id="sp6" class="hidden">
+            <h1>Fujifilm X-T50 (Chính hãng) (Body Only, Black)</h1>
+            <div class="main-describe">
+                <div class="main-describe__container">
+                    <div class="main-describe__item--pic">
+                        <img src="./para-pics/sp6.jpg" alt="TTArtisan AF 27mm f/2.8 for Fujifilm (Chính hãng)">
+                    </div>
+                    <div class="main-describe__item--infor">
+                        <div class="price">
+                            <h2>37,990,000 đ</h2>
+                            <div class="mess"><a href="https://www.messenger.com/"><i class="fa-regular fa-comment"></i> Inbox 
+                                <strong > TẠI ĐÂY </strong>  để nhận giá siêu tốt!</a>
+                            </div>
+                            <div class="pay-quickly">
+                                <a href="https://payoo.vn/"><i class="fa-regular fa-hand-point-up"></i> Mua nhanh</a>
+                            </div>
+                        </div>
+                        <ul><strong>Thông tin nổi bật:</strong></ul>
+                        <li>Cảm biến ảnh APS-C X-Trans CMOS 5 HR 40.2MP</li>
+                        <li>Nút xoay chế độ Film Simulation chuyên dụng</li>
+                        <li>Phạm vi ISO gốc 125-12800, mở rộng đến 64-51200</li>
+                        <li>Quay video 4K 60p & 6.2K 30p 4:2:2 10bit</li>
+                        <li>Kính ngắm điện tử 0.39" 2.36M điểm</li>
+                        <li>Màn hình cảm ứng LCD 3" 1.84M điểm, cơ chế nghiêng</li>
+                        <li> Ổn định hình ảnh trong thân máy 7 stop</li>
+                        <li>Tích hợp Frame.io Camera to Cloud</li>
+                        <li>Lấy nét tự động phát hiện chủ thể được hỗ trợ bởi AI</li>
+                        <li>20 chế độ Film Simulation</li>
+                        <li>1 khe thẻ nhớ SD, 1 pin NP-W126S</li>
+                        <li>Trọng lượng: 389g (body only)</li>
+                    </div>
+                </div>
+                <div class="describe-sub">
+                    <h1><i class="fa-solid fa-audio-description"></i> Mô tả</h1>
+                    <div class=""><strong>Fujifilm X-T50</strong> là sự kết hợp DNA hàng đầu với khả năng truy cập các chế độ giả lập phim chưa từng có. Với nút chọn chế độ giả lập phim chuyên dụng hoàn toàn mới, đây là sự lựa chọn rõ ràng cho những ai muốn khám phá toàn bộ tiềm năng của vô số bản sao phim của Fujifilm, bao gồm chế độ REALA ACE mới nhất. Nhiều tính năng tương tự do X100VI cung cấp cũng xuất hiện trên X-T50, bao gồm cảm biến X-Trans CMOS 5 HR 40.2MP và bộ xử lý hình ảnh X-Processor 5. Tuy nhiên, sự khác biệt làm nên ưu điểm của X-T50 là khả năng có thể thay đổi ống kính. Với thiết kế nhẹ và hợp lý, X-T50 thân thiện với du lịch và sẽ mang lại những bức ảnh và video ấn tượng. là sự kết hợp DNA hàng đầu với khả năng truy cập các chế độ giả lập phim chưa từng có. Với nút chọn chế độ giả lập phim chuyên dụng hoàn toàn mới, đây là sự lựa chọn rõ ràng cho những ai muốn khám phá toàn bộ tiềm năng của vô số bản sao phim của Fujifilm, bao gồm chế độ REALA ACE mới nhất. Nhiều tính năng tương tự do X100VI cung cấp cũng xuất hiện trên X-T50, bao gồm cảm biến X-Trans CMOS 5 HR 40.2MP và bộ xử lý hình ảnh X-Processor 5. Tuy nhiên, sự khác biệt làm nên ưu điểm của X-T50 là khả năng có thể thay đổi ống kính. Với thiết kế nhẹ và hợp lý, X-T50 thân thiện với du lịch và sẽ mang lại những bức ảnh và video ấn tượng.</div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <main id="sp7" class="hidden">
+            <h1>Nikon Z6 III (Chính hãng VIC) (Body Only)</h1>
+            <div class="main-describe">
+                <div class="main-describe__container">
+                    <div class="main-describe__item--pic">
+                        <img src="./para-pics/sp7.jpg" alt="">
+                    </div>
+                    <div class="main-describe__item--infor">
+                        <div class="price">
+                            <h2>66,990,000 đ</h2>
+                            <div class="mess"><a href="https://www.messenger.com/"><i class="fa-regular fa-comment"></i> Inbox 
+                                <strong > TẠI ĐÂY </strong>  để nhận giá siêu tốt!</a>
+                            </div>
+                            <div class="pay-quickly">
+                                <a href="https://payoo.vn/"><i class="fa-regular fa-hand-point-up"></i> Mua nhanh</a>
+                            </div>
+                        </div>
+                        <ul><strong>Thông tin nổi bật:</strong></ul>
+                        <li>Cảm biến CMOS xếp chồng một phần 24.5MP</li>
+                        <li>Bộ xử lý hình ảnh EXPEED 7</li>
+                        <li>Quay video 6K 60p N-RAW, 6K 30p ProRes RAW</li>
+                        <li>Quay video 4K 120p, Full HD 240p slo-mo</li>
+                        <li>Chụp đến 20 fps Raw, 60 fps JPEG</li>
+                        <li>EVF 5.76M điểm, không bị blackout</li>
+                        <li>AF 493 điểm, phát hiện đối tượng dựa trên AI</li>
+                        <li> Màn hình cảm ứng LCD 3.2" 2.1M điểm, nghiêng 4 trục</li>
+                        <li>2 khe cắm thẻ nhớ CFx Type B & SD</li>
+                        <li>Kết nối trực tiếp Camera-to-Cloud</li>
+                            
+                    </div>
+                </div>
+                <div class="describe-sub">
+                    <h1><i class="fa-solid fa-audio-description"></i> Mô tả</h1>
+                    <div class="">Với thiết kế cảm biến xếp chồng một phần mới, <strong>Nikon Z6 III</strong> mở ra những nâng cấp hàng đầu cho một chiếc máy ảnh tầm trung, bao gồm khả năng lấy nét tự động nhanh hơn và chính xác hơn, video 6K RAW chuẩn chuyên nghiệp ngay trong máy, chụp trước với tốc độ lên đến 120 khung hình/giây và khung ngắm EVF mượt mà, tươi sáng, đầy màu sắc. Những nâng cấp này kết hợp với nhau biến máy ảnh không gương lật này trở thành lựa chọn lý tưởng cho các chuyên gia đầy tham vọng đang tìm kiếm một chiếc máy ảnh toàn diện, giá cả phải chăng.</div>
+                </div>
+            </div>
+        </main>
+
+
+
+        <main id="sp8" class="hidden">
+            <h1>Sony Alpha a7 IV (Chính hãng) (Thẻ Nhớ 64GB + Dán Màn Hình, Body Only)</h1>
+            <div class="main-describe">
+                <div class="main-describe__container">
+                    <div class="main-describe__item--pic">
+                        <img src="./para-pics/sp8.jpg" alt="">
+                    </div>
+                    <div class="main-describe__item--infor">
+                        <div class="price">
+                            <h2>47,490,000 đ</h2>
+                            <div class="mess"><a href="https://www.messenger.com/"><i class="fa-regular fa-comment"></i> Inbox 
+                                <strong > TẠI ĐÂY </strong>  để nhận giá siêu tốt!</a>
+                            </div>
+                            <div class="pay-quickly">
+                                <a href="https://payoo.vn/"><i class="fa-regular fa-hand-point-up"></i> Mua nhanh</a>
+                            </div>
+                        </div>
+                        <ul><strong>Thông tin nổi bật:</strong></ul>
+                        <li>Cảm biến full frame BSI Exmor R CMOS 33MP </li>
+                        <li>Vi xử lý hình ảnh BIONZ XR</li>
+                        <li>Chụp liên tiếp đến 10 fps, ISO 100-51200</li>
+                        <li>Quay phim 4K 60p 10 bit, hỗ trợ S-Cinetone</li>
+                        <li>EVF 3.68 triệu điểm ảnh với refresh rate 120 fps</li>
+                        <li> Màn hình cảm ứng LCD 3" 1.03 triệu điểm ảnh, vari-angle</li>
+                        <li> Fast Hybrid AF 759 điểm, Real-time Eye AF</li>
+                        <li>Cân bằng Focus Breathing</li>
+                        <li>Ổn định hình ảnh SteadyShot 5 trục</li>
+                        <li>Creative Look, Soft Skin Effect</li>
+                        <li>Stream 4K 15p UVC/UAC qua cổng USB Type-C</li>
+                    </div>
+                </div>
+                <div class="describe-sub">
+                    <h1><i class="fa-solid fa-audio-description"></i> Mô tả</h1>
+                    <div class=""><strong>Sony Alpha a7 IV</strong> là máy ảnh mirrorless đa năng kết hợp tiên tiến phá vỡ chuẩn mực, trở lại với hiệu suất ảnh tĩnh và video mạnh hơn gấp đôi so với người tiền nhiệm, sở hữu độ phân giải và hiệu suất AF hấp dẫn các nhiếp ảnh gia cùng với khả năng quay video 4K 60p dành cho filmmaker và các nhà sáng tạo nội dung. Cảm biến được phát triển mới Exmor R CMOS 33MP kết hợp với bộ vi xử lý hình ảnh BIONZ XR từ máy ảnh Alpha 1 nhằm đạt tốc độ chụp liên tiếp đến 10 fps và quay phim đến 4K 60p, mở phạm vi nhạy sáng đến ISO 51200 và dải tần nhạy sáng 15+ bước dừng. </div>
+                </div>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-information">
+                <div class="footer-information__div--category">
+                    <h4>DOANH MỤC KINH DOANH</h4>
+                    <div>Máy ảnh</div>
+                    <div>Phụ kiện máy ảnh</div>
+                    <a href="https://moit.gov.vn/"><img src="../../trangchu/assets/imgs/footer-img/footer-pay-thongbao.png" alt="bo cong thuong" class="img-bocongthuong"></a>
+                    
+                </div>
+                <div class="footer-information__div--introduce">
+                    <h4>GIỚI THIỆU</h4>
+                    <div>Giới thiệu</div>
+                    <div>Tuyển dụng</div>
+                    <div>Liên hệ hợp tác</div>
+                    <div>Góp ý</div>
+                    <div>Blogs công nghệ</div>
+                </div>
+                <div class="footer-information__div--help">
+                    <h4>HỔ TRỢ KHÁCH HÀNG</h4>
+                    <div>HƯỚNG DẪN MUA TRẢ GÓP</div>
+                    <div>TRUNG TÂM BẢO HÀNH</div>
+                    <div>THÔNG TIN THANH TOÁN</div>
+                    <div class="sub">
+                        Chính sách bảo hành
+                        <div>Thứ 2 - thứ 7: 8h - 22h</div>
+                        <div>CN & ngày lễ: 9h - 18h</div>
+                    </div>
+                </div>
+                <div class="footer-information__div--contact">
+                    <h4>LIÊN HỆ TRỰC TIẾP</h4>
+                    <div>Tổng đài CSKH</div> <a href="#">0123456789</a>
+                    <div>Tư vấn Máy Ảnh</div> <a href="#">0123456789</a>
+                    <div>Tư vấn Máy Tính</div> <a href="#">0123456789</a>
+                    <div>Tư vấn khác</div> <a href="#">0123456789</a>
+                </div>
+                <div class="footer-information__div--social">
+                    <div class="footer-information__div--icon">
+                        <span class="icon-like"></span>
+                        <a href="https://www.youtube.com/"><i class="fa-brands fa-youtube footer-icon__i--youtube"></i></a>
+                        <a href="https://www.facebook.com/"><i class="fa-brands fa-facebook footer-icon__i--facebook"></i></a>
+                        <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram footer-icon__i--instagram"></i></a>
+                    </div>
+                    <h3>TỔNG ĐÀI CSKH</h3>
+                    <a href="#">0123456789</a>
+                    <div id="footer__div--one">Trả Góp Online</div>
+                    <a href="https://bill.payoo.vn/"><img src="../../trangchu/assets/imgs/footer-img/footer-pay.png" alt="anh thanh toan" class="img-pay"></a>
+                </div>
+
+            </div>
+        </footer>
+    </div>
+   
+    <!-- <script src="./home.js"></script> -->
+     <script>
+        let tabs = document.querySelectorAll('.tab-Node');
+        let tabContents = document.querySelectorAll('.tab-feature--content');
+        for(let i = 0; i < tabs.length; i++){
+            window.onload = ()=>{
+                tabs[0].classList.add('tabcolor');
+                tabContents[0].classList.add('active');
+            }
+            tabs[i].onclick = ()=>{
+                if(i == 0){
+                    tabs[0].classList.add('tabcolor');
+                    tabContents[0].classList.add('active');
+                    tabs[1].classList.remove('tabcolor');
+                    tabContents[1].classList.remove('active');
+                } else{
+                    tabs[1].classList.add('tabcolor');
+                    tabContents[1].classList.add('active');
+                    tabs[0].classList.remove('tabcolor');
+                    tabContents[0].classList.remove('active');
+                }
+            }
+        }
+        // header-bar-menu
+        const header_nav = document.querySelector('.header-nav');
+        const mobilebar = document.querySelector('.menu-bar');
+        const heightmenu = header_nav.clientHeight;
+        
+        mobilebar.onclick = () => {
+            let isClose = header_nav.clientHeight === heightmenu;
+            if(isClose){
+                header_nav.style.height = 'auto';
+            }
+            else {
+                header_nav.style.height = null;
+            }
+        }
+        // header-bar-menu responsive
+
+        const likebutton = document.querySelector('.icon-like');
+        let likeText = Math.floor(Math.random() * (1000 - 10) + 10);
+        console.log(likeText)
+        likebutton.innerHTML = `<i class="fa-regular fa-thumbs-up"></i> ${likeText}K`
+
+        // set url from sanpham.html
+        window.onload = function() {
+            const hash = window.location.hash;
+            if (hash) {
+                document.querySelectorAll('.hidden').forEach(element => {
+                element.style.display = 'none';
+                });
+                const targetElement = document.querySelector(hash);
+                if (targetElement) {
+                targetElement.style.display = 'block';
+                }
+            }
+    }
+
+       
+     </script>
+     <!-- <script src="../../home.js"></script> -->
+</body>
+
+</html>

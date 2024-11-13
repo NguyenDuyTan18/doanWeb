@@ -139,7 +139,7 @@
         margin-top: 20px;
     }
     .footer-information__div--social a .img-pay{
-        margin-left: 17%;
+        margin-left: 10%;
     }
 
     .main-content--from {
@@ -434,7 +434,7 @@
     /* modal */
 }
 
-@media (min-width: 481px) and (max-width:1024px) {
+@media  (min-width: 481px) and (max-width:1024px) {
     
     .main-picture__container, .main-img{
          width: 103%;
@@ -454,6 +454,13 @@
     }
     .menu-bar, .header-nav__div--trangchu, .header-nav__div--camera, .header-nav__div--camera-accessory, .header-nav__div--laptop, .header-nav__div--laptop-accessory {
         padding: 5px 5px;
+    }
+    .main-content--from{
+        display: block;
+    }
+
+    .main-introduce__list--content-one , .main-introduce__list--content-two{
+        height: 30%;
     }
    
 }
