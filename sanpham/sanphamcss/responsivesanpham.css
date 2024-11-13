@@ -1,13 +1,13 @@
-@media (max-width: 450px){
+@media (max-width: 480px){
     .main{
         width: 100%;
     }
     ul.products{
         display: block;
     }
-    ul.products li {
+    /* ul.products li {
         width: 414px;
-    }
+    } */
     .main h1 {
         display: block;
         margin: 5px 10%;

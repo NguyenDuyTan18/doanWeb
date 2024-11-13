@@ -203,6 +203,7 @@
     }
     thankButton.addEventListener('click',showModal);
     closeThankButton.addEventListener('click', closeModal);
+    modalButton.addEventListener('click', closeModal)
 //modal
 
 
