@@ -302,8 +302,8 @@
 }
 
 .main__list--products{
-    /* width: 100%; */
-    /* width: 1250px; */
+    width: 100%; 
+    /* width: 1250px;  */
 }
 .main-products__container{
     width: 100%;

@@ -3,12 +3,40 @@
   
 
 }
+.root{
+    display: grid;
+    grid-template: 
+    "header"
+    "banner"
+    "main"
+    "footer"
+    "modal";
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Cấu hình Grid đúng */
+    grid-gap: 10px;
+    
+    
+}
+
 
 .header{
     position: relative;
-    width: 100%;
+    width: 100vw;
+    grid-area: header;
+}
+.banner{
+    grid-area: banner;
 }
 
+.main{
+    grid-area: main;
+    width: 100vw;
+}
+.footer{
+    grid-area: footer;
+}
+.modal-thank{
+    grid-area: modal;
+}
 
 /* Header-content */
 .header-content_img--logo{

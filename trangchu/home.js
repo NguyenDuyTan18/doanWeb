@@ -207,6 +207,8 @@
 //modal
 
 
+
+
 $(document).ready(function(){
     $('.main__list--products').slick({
         slidesToShow: 4,
