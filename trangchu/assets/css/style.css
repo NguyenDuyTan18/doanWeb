@@ -2,6 +2,10 @@
   font-family: "Montserrat", sans-serif;
   
 }
+
+body{
+    margin: 0;
+}
 .root{
     display: grid;
     grid-template: 
@@ -16,9 +20,7 @@
     width: 100%;
     grid-area: header;
 }
-.banner{
-    grid-area: banner;
-}
+
 
 .main{
     grid-area: main;

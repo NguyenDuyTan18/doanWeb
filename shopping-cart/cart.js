@@ -65,7 +65,7 @@ function displayCart() {
             
         `;
     });
-    showMoney.innerHTML = `<p> Total: ${formatCurrency(total)}`;
+    showMoney.innerHTML = `<p> ${formatCurrency(total)} </p>`;
     
 }
 
