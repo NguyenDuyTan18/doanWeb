@@ -45,7 +45,7 @@
         justify-content: space-around;
     }
     .header-logo{
-        margin-left: -70%;
+        margin-left: 0%;
         width: 30px;
     }
     .webname{
@@ -158,7 +158,7 @@
         flex-direction: column;
     }
     .footer-information__div--social a .img-pay{
-        margin-left: 4%;
+        margin-left: 10%;
     }
     .footer-information__div--category div, .footer-information__div--introduce div, .footer-information__div--help div, .footer-information__div--contact div, .sub, .img-bocongthuong {
         display: none;

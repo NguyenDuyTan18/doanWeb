@@ -6,10 +6,8 @@
     display: grid;
     grid-template: 
     "header"
-    "banner"
     "main"
-    "footer"
-    "modal";
+    "footer";
     grid-template-columns: repeat(auto-fill, minmax(100%, 1fr)); /* Cấu hình Grid đúng */
 }
 

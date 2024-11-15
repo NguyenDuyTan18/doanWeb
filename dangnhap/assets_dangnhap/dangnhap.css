@@ -9,12 +9,15 @@ body{
 .root{
     display: grid;
     grid-template-areas: 
-    'header header header'
-    'main main main'
-    'footer footer footer';
+    'header'
+    'main '
+    'footer';
+}
+.header-background{
+    grid-area: header;
 }
 .header{
-    grid-area: header;
+    /* grid-area: header; */
     background-color: #000;
     margin-bottom: 10%;
     display: flex;
@@ -34,6 +37,9 @@ body{
     grid-area: footer;
 }
 /* Dang nhap */
+.main{
+    grid-area: main;
+}
 .main-container{
     display: flex;
     justify-content: center;
