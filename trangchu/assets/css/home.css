@@ -36,11 +36,10 @@
 
 /* main-introduce--list */
 
-.main__list--introduce{
-   
-}
-
 .main-introduce__div--button .main-introduce__button--one{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 44px;
     width: 105px;
     border: 2px solid rgba(0, 0, 0, 0.3);
@@ -48,6 +47,9 @@
 }
 
 .main-introduce__div--button .main-introduce__button--two{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 44px;
     width: 105px;
     border: 2px solid rgba(0, 0, 0, 0.3);
@@ -55,8 +57,6 @@
 }
 
 .main-introduce__button--one p, .main-introduce__button--two p{
-    text-align: center;
-    line-height: 44px;
     font-weight: 500;
 }
 
@@ -75,8 +75,6 @@
 }
 
 .main-introduce__div--content{
-   /* height: 80%;
-   width: 80%; */
    overflow: hidden;
 }
 .main-introduce__div--button{
